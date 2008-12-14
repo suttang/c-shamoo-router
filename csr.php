@@ -2,7 +2,7 @@
 /* ============================================================ *//**
  * c-shamoo router
  * 
- * URI routing framework like c-shamoo
+ * URI routing library for PHP4 & PHP5
  * version 1.0
  * 
  * @package csr
@@ -1300,7 +1300,7 @@ class CSR_Dispatcher extends CSR_Object {
 			 * Arguments
 			 */
 			$regex = $this->_wildToRegex(':num', $regex, '[0-9]+');
-			$regex = $this->_wildToRegex(':any', $regex, '[A-Za-z0-9_-]+');
+			$regex = $this->_wildToRegex(':any', $regex, '[^/]+');
 			/*
 			 * Default
 			 */
@@ -1331,7 +1331,7 @@ class CSR_Dispatcher extends CSR_Object {
 							continue;
 						}
 						// Arguments
-						$argumentsArray[] = $match['value'];
+						$argumentsArray[] = urldecode($match['value']);						
 						continue;
 					}
 					// Regex captures
@@ -1689,6 +1689,8 @@ class CSR_View extends CSR_Object {
 class CSR_Controller extends CSR_Object {
 	var $view;
 	var $layout = '*/*';
+	var $_beforeActionResults = array();
+	
 	function __construct() {
 		parent::__construct();
 		$this->view = &CSR::get('view');
@@ -1758,6 +1760,11 @@ class CSR_Controller extends CSR_Object {
 			'message' => 'Undefined action.',
 			'type' => 'UNDEFINED_ACTION'
 		));
+	}
+	
+	function _isExecutable() {
+		foreach ($this->_beforeActionResults as $result) if ($result === false) return false;
+		return true;
 	}
 }
 /* ============================================================ *//**
@@ -1858,9 +1865,8 @@ class CSR_DefaultPhases {
 		CSR::addEvent(EVENT_AFTER_ACTION, array(&$controller, 'afterAction'));
 		CSR::addEvent(EVENT_BEFORE_RENDER, array(&$controller, 'beforeRender'));
 		CSR::addEvent(EVENT_AFTER_RENDER, array(&$controller, 'afterRender'));
-		// Execute action
-		CSR::triggerEvent(EVENT_BEFORE_ACTION);
-		if (!$controller->_executeAction($targetAction, $arguments)) return CSR_Controller::_undefinedAction();
+		$controller->_beforeActionResults = CSR::triggerEvent(EVENT_BEFORE_ACTION);
+		if ($controller->_isExecutable() && !$controller->_executeAction($targetAction, $arguments)) return CSR_Controller::_undefinedAction();
 		CSR::triggerEvent(EVENT_AFTER_ACTION);
 	}
 	
