@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd ../;
+docdir=`pwd`/doc;
+targetdir=`pwd`;
+
+mkdir doc doc;
+
+phpdoc -t $docdir -d $targetdir -o HTML:Smarty:PHP

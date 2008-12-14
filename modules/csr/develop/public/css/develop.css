@@ -1,0 +1,44 @@
+body {
+	font-family: 'Lucida Grande', Verdana, Meiryo, "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴPro W3", "HiraKakuPro-W3", "MS Pゴシック", sans-serif;
+	font-size: 80%;
+	line-height: 1.6;
+	background: #f1f1f1;
+}
+
+#header_wrapper {
+	padding-top: 5em;
+	background: #fff;
+}
+#header {
+	width: 800px;
+	margin: auto;
+	margin-bottom: 2em;
+}
+#contents_wrapper {}
+#contents {
+	width: 800px;
+	margin: auto;
+	margin-bottom: 2em;
+}
+#footer_wrapper {}
+#footer {
+	width: 800px;
+	margin: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: Georgia, 'Times', 'Times New Roman', serif;
+	font-weight: normal;
+}
+h1 {
+	font-size: 260%;
+	letter-spacing: 0.08em;
+	line-height: 1;
+}
+p.url {
+	line-height: 1;
+	font-family: Georgia, 'Times', 'Times New Roman', serif;
+}
+
+a {
+	color: #333;
+}

@@ -1,0 +1,364 @@
+<html>
+<head>
+<title>Docs for page csr.php</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">csr</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_csr.html" class="menu">class tree: csr</a> ]
+		  [ <a href="../elementindex_csr.html" class="menu">index: csr</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_csr.html">csr</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../csr/_404.php.html">		404.php
+		</a><br>
+			<a href="../csr/_csr.php.html">		csr.php
+		</a><br>
+			<a href="../csr/_index.php.html">		index.php
+		</a><br>
+			<a href="../csr/_sample.php.html">		sample.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../csr/CSR.html">CSR</a><br />
+	    		<a href="../csr/CSR_DefaultPhases.html">CSR_DefaultPhases</a><br />
+	    		<a href="../csr/CSR_Dispatcher.html">CSR_Dispatcher</a><br />
+	    		<a href="../csr/CSR_EventObject.html">CSR_EventObject</a><br />
+	    		<a href="../csr/CSR_Object.html">CSR_Object</a><br />
+	    		<a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Procedural File: csr.php</h1>
+Source Location: /csr.php<br /><br />
+
+<br>
+<br>
+
+<div class="contents">
+<h2>Classes:</h2>
+<dt><a href="../csr/CSR_Object.html">CSR_Object</a></dt>
+	<dd>c-shamoo router base object class</dd>
+<dt><a href="../csr/CSR_EventObject.html">CSR_EventObject</a></dt>
+	<dd>c-shamoo router event object class</dd>
+<dt><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></dt>
+	<dd>c-shamoo router phase object class</dd>
+<dt><a href="../csr/CSR.html">CSR</a></dt>
+	<dd>c-shamoo router class</dd>
+<dt><a href="../csr/CSR_Dispatcher.html">CSR_Dispatcher</a></dt>
+	<dd>c-shamoo router routing engine</dd>
+<dt><a href="../csr/CSR_DefaultPhases.html">CSR_DefaultPhases</a></dt>
+	<dd>c-shamoo router default phases class</dd>
+</div><br /><br />
+
+<h2>Page Details:</h2>
+c-shamoo router<br /><br /><p>URI routing framework like c-shamoo  version 1.0</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Takahiro Suzuki &lt;<a href="mailto:szktkhr@szktkhr.org">szktkhr@szktkhr.org</a>&gt;</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+<br /><br />
+<br /><br />
+  <hr />
+	<a name="defineCSR_DEVELOP_MODE"></a>
+	<h3>CSR_DEVELOP_MODE <span class="smalllinenumber">[line 18]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>CSR_DEVELOP_MODE = true</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define CSR mode (true | false)<br /><br /><p>if true then CSR running develop mode.</p><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineERRORS_DIR"></a>
+	<h3>ERRORS_DIR <span class="smalllinenumber">[line 33]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>ERRORS_DIR = INSTALL_DIR.'applications/errors/'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define CSR error documents directory<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_AFTER_OUTPUT"></a>
+	<h3>EVENT_AFTER_OUTPUT <span class="smalllinenumber">[line 75]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_AFTER_OUTPUT = 'event_after_output'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define after output event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_AFTER_PARSE_ROUTE"></a>
+	<h3>EVENT_AFTER_PARSE_ROUTE <span class="smalllinenumber">[line 59]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_AFTER_PARSE_ROUTE = 'event_after_parse_route'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define after parse route event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_AFTER_RENDER"></a>
+	<h3>EVENT_AFTER_RENDER <span class="smalllinenumber">[line 67]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_AFTER_RENDER = 'event_after_render'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define after render event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_APPLICATION_END"></a>
+	<h3>EVENT_APPLICATION_END <span class="smalllinenumber">[line 51]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_APPLICATION_END = 'event_application_end'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define application end event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_APPLICATION_START"></a>
+	<h3>EVENT_APPLICATION_START <span class="smalllinenumber">[line 47]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_APPLICATION_START = 'event_application_start'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define application start event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_BEFORE_OUTPUT"></a>
+	<h3>EVENT_BEFORE_OUTPUT <span class="smalllinenumber">[line 71]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_BEFORE_OUTPUT = 'event_before_output'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define before output event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_BEFORE_PARSE_ROUTE"></a>
+	<h3>EVENT_BEFORE_PARSE_ROUTE <span class="smalllinenumber">[line 55]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_BEFORE_PARSE_ROUTE = 'event_before_parse_route'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define before parse route event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_BEFORE_RENDER"></a>
+	<h3>EVENT_BEFORE_RENDER <span class="smalllinenumber">[line 63]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_BEFORE_RENDER = 'event_before_render'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define before render event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_DISPATCH_ERROR"></a>
+	<h3>EVENT_DISPATCH_ERROR <span class="smalllinenumber">[line 79]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_DISPATCH_ERROR = 'event_dispatch_error'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define dispatch error event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineEVENT_PHASE_RUN"></a>
+	<h3>EVENT_PHASE_RUN <span class="smalllinenumber">[line 83]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>EVENT_PHASE_RUN = 'event_phase_run'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define phase run event<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineINSTALL_DIR"></a>
+	<h3>INSTALL_DIR <span class="smalllinenumber">[line 25]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>INSTALL_DIR = dirname($_SERVER['SCRIPT_FILENAME']).'/'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define CSR install directory<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineMODULES_DIR"></a>
+	<h3>MODULES_DIR <span class="smalllinenumber">[line 29]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>MODULES_DIR = INSTALL_DIR.'modules/'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define CSR modules directory<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="definePHASE_APPLICATION_END"></a>
+	<h3>PHASE_APPLICATION_END <span class="smalllinenumber">[line 94]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHASE_APPLICATION_END = 'phase_application_end'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define application end phase<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="definePHASE_APPLICATION_START"></a>
+	<h3>PHASE_APPLICATION_START <span class="smalllinenumber">[line 90]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHASE_APPLICATION_START = 'phase_application_start'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define application start phase<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="definePHASE_OUTPUT"></a>
+	<h3>PHASE_OUTPUT <span class="smalllinenumber">[line 106]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHASE_OUTPUT = 'phase_output'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define output phase<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="definePHASE_PARSE_ROUTE"></a>
+	<h3>PHASE_PARSE_ROUTE <span class="smalllinenumber">[line 98]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHASE_PARSE_ROUTE = 'phase_parse_route'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define parse route phase<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="definePHASE_RENDER"></a>
+	<h3>PHASE_RENDER <span class="smalllinenumber">[line 102]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PHASE_RENDER = 'phase_render'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define render phase<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+  <hr />
+	<a name="defineROOT_PATH"></a>
+	<h3>ROOT_PATH <span class="smalllinenumber">[line 40]</span></h3>
+	<div class="tags">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>ROOT_PATH = dirname($_SERVER['SCRIPT_NAME']).'/'</code>
+    </td></tr></table>
+    </td></tr></table>
+
+    Define CSR root directory from document root<br /><br />    <br />
+		</div>
+	<div class="top">[ <a href="#top">Top</a> ]</div><br /><br />
+<br />
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 24 Oct 2008 02:21:35 +0900 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

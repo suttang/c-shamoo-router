@@ -1,0 +1,20 @@
+#contents:after {
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0.1px;
+	font-size: 0.1em;
+	line-height: 0;
+	clear: both;
+}
+#contents {
+	zoom: 100%;
+}
+
+
+#contents .content {
+	float: left;
+	width: 179px;
+	padding: 0 10px;
+	border-left: 1px dotted #f00;
+}

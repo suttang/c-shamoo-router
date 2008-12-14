@@ -1,0 +1,713 @@
+<html>
+<head>
+<title>Docs For Class CSR_PhaseObject</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">csr</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                    
+                              		  [ <a href="../classtrees_csr.html" class="menu">class tree: csr</a> ]
+		  [ <a href="../elementindex_csr.html" class="menu">index: csr</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+      <b>Packages:</b><br />
+              <a href="../li_csr.html">csr</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../csr/_404.php.html">		404.php
+		</a><br>
+			<a href="../csr/_csr.php.html">		csr.php
+		</a><br>
+			<a href="../csr/_index.php.html">		index.php
+		</a><br>
+			<a href="../csr/_sample.php.html">		sample.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../csr/CSR.html">CSR</a><br />
+	    		<a href="../csr/CSR_DefaultPhases.html">CSR_DefaultPhases</a><br />
+	    		<a href="../csr/CSR_Dispatcher.html">CSR_Dispatcher</a><br />
+	    		<a href="../csr/CSR_EventObject.html">CSR_EventObject</a><br />
+	    		<a href="../csr/CSR_Object.html">CSR_Object</a><br />
+	    		<a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: CSR_PhaseObject</h1>
+Source Location: /csr.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre><a href="../csr/CSR_Object.html">CSR_Object</a>
+   |
+   --CSR_PhaseObject</pre><br />
+<div class="description">c-shamoo router phase object class</div><br /><br />
+
+
+
+
+
+
+        
+</td>
+
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../csr/CSR_PhaseObject.html#method__construct">__construct</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methoddelete">delete</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodhasNext">hasNext</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodisExists">isExists</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodlistup">listup</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodmoveTo">moveTo</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodnext">next</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodpause">pause</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodprev">prev</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodpush">push</a></li>
+    <li><a href="../csr/CSR_PhaseObject.html#methodrun">run</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+<td valign="top">
+<h3>Inherited Methods</h3>
+<div class="tags">
+<h4>Class: <a href="../csr/CSR_Object.html">CSR_Object</a></h4>
+<dl>
+    <dt>
+    <a href="../csr/CSR_Object.html#method__construct">CSR_Object::__construct()</a>
+  </dt>
+  <dd>
+    Constructor for PHP5
+  </dd>
+    <dt>
+    <a href="../csr/CSR_Object.html#methodCSR_Object">CSR_Object::CSR_Object()</a>
+  </dt>
+  <dd>
+    Constructor for PHP4
+  </dd>
+  </dl>
+</div>
+</td>
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 259]<br />
+c-shamoo router phase object class<br /><br /></div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 279]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>CSR_PhaseObject __construct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		<br /><br />
+
+	Overrides <a href="../csr/CSR_Object.html#method__construct">CSR_Object::__construct()</a> (Constructor for PHP5)<br /><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methoddelete"></a>
+	<h3>method delete <span class="smalllinenumber">[line 368]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void delete(
+string
+$phase)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Delete phase method<br /><br /><p>delete target phase</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methoddelete">delete</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:phase3</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$phase</b>&nbsp;&nbsp;</td>
+        <td>phase name</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodhasNext"></a>
+	<h3>method hasNext <span class="smalllinenumber">[line 719]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool hasNext(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		フェイズ進行可能状況テストメソッド<br /><br /><p>フェイズが次のフェイズを持っているかどうかを確認する。  次のフェイズを持っていれば true  持っていなければ false を返す。</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">while&nbsp;</span><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodhasNext">hasNext</a><span class="src-sym">(</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;&nbsp;...&nbsp;&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodnext">next</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;echo&nbsp;<span class="src-str">&quot;!!!!!&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;...&nbsp;...&nbsp;...&nbsp;!!!!!</span></div></li>
+</ol></p><br /><br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisExists"></a>
+	<h3>method isExists <span class="smalllinenumber">[line 681]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed isExists(
+string
+$phase)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Check phase register status method<br /><br /><p>与えられた名前のフェイズが登録されているかどうかを確認する。  登録されていれば、 index を返し、  登録されていなければ false を返す。</p><p>if ($phase-&gt;isExists('some_phase'))  として評価すると、指定したフェイズが最初だった場合、0が返り、実行しないので、注意(=== falseと比較)。</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisExists">isExists</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">))</span><span class="src-sym">;</span><span class="src-comm">//&nbsp;int(0)</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisExists">isExists</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">))</span><span class="src-sym">;</span><span class="src-comm">//&nbsp;int(1)</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisExists">isExists</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">))</span><span class="src-sym">;</span><span class="src-comm">//&nbsp;int(2)</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisExists">isExists</a><span class="src-sym">(</span><span class="src-str">'sample_phase_4'</span><span class="src-sym">))</span><span class="src-sym">;</span><span class="src-comm">//&nbsp;bool(false)</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>phase index or false</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$phase</b>&nbsp;&nbsp;</td>
+        <td>phase name</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodisRunning"></a>
+	<h3>method isRunning <span class="smalllinenumber">[line 643]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool isRunning(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Check phase status method<br /><br /><p>現在フェイズが進行しているかどうかのテストをする</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/var_dump">var_dump</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodisRunning">isRunning</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;bool(false)&nbsp;bool(true)&nbsp;bool(true)&nbsp;bool(true)&nbsp;bool(false)</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>Is phase running?</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodlistup"></a>
+	<h3>method listup <span class="smalllinenumber">[line 416]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>array listup(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		List up registered phase method<br /><br /><p>登録されているフェイズの一覧を返す</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<a href="http://www.php.net/print_r">print_r</a><span class="src-sym">(</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodlistup">listup</a><span class="src-sym">(</span><span class="src-sym">))</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;Array</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;(</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[sample_phase_1]&nbsp;=&gt;&nbsp;phase1</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[sample_phase_2]&nbsp;=&gt;&nbsp;phase2</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[sample_phase_3]&nbsp;=&gt;&nbsp;phase3</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;)</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>phase list</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodmoveTo"></a>
+	<h3>method moveTo <span class="smalllinenumber">[line 605]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool moveTo(
+string
+$phase, [array
+$params = array()])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Move to target phase<br /><br /><p>次に実行するフェイズを指定する。  指定されたフェイズが存在しない場合、 false を返し、  正常にフェイズ移動ができた場合、 true を返す。</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">,&nbsp;</span><span class="src-var">$phaseCounter</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;1&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$phaseCounter&nbsp;</span>&lt;&nbsp;<span class="src-num">2</span><span class="src-sym">)&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodmoveTo">moveTo</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;2&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">,&nbsp;</span><span class="src-var">$phaseCounter</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;3&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$phaseCounter</span>++&nbsp;&lt;&nbsp;<span class="src-num">4</span><span class="src-sym">)&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodmoveTo">moveTo</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phaseCounter&nbsp;</span>=&nbsp;<span class="src-num">0</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span><span class="src-comm">//&nbsp;1313123123123</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>move status</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$phase</b>&nbsp;&nbsp;</td>
+        <td>phase name</td>
+      </tr>
+          <tr>
+        <td class="type">array&nbsp;&nbsp;</td>
+        <td><b>$params</b>&nbsp;&nbsp;</td>
+        <td>[optional] params</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodnext"></a>
+	<h3>method next <span class="smalllinenumber">[line 452]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void next(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Progress phase method<br /><br /><p>フェイズを一つ進める</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodnext">next</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:phase3:</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpause"></a>
+	<h3>method pause <span class="smalllinenumber">[line 566]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void pause(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Pause phase method<br /><br /><p>フェイズをの実行を停止する  もうちょいテストが必要</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpause">pause</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;echo&nbsp;<span class="src-str">&quot;=====&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:=====phase2:phase3:</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodprev"></a>
+	<h3>method prev <span class="smalllinenumber">[line 486]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void prev(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Retrogress phase method<br /><br /><p>フェイズを一つ戻す</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">global&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">,&nbsp;</span><span class="src-var">$phaseCounter</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-var">$phaseCounter</span>++&nbsp;&lt;&nbsp;<span class="src-num">5</span><span class="src-sym">)&nbsp;</span><span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodprev">prev</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phaseCounter&nbsp;</span>=&nbsp;<span class="src-num">0</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:phase2:phase2:phase2:phase2:phase2:phase2:phase3:</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodpush"></a>
+	<h3>method push <span class="smalllinenumber">[line 313]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void push(
+string
+$phase, mixed
+$handler, [string
+$nextOf = null])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Add phase method<br /><br /><p>When the $nextOf which there is not was appointed, dont add it.  Overwrite when $phase was exists.</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:phase2:phase3</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$phase</b>&nbsp;&nbsp;</td>
+        <td>phase name</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$handler</b>&nbsp;&nbsp;</td>
+        <td>function name</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$nextOf</b>&nbsp;&nbsp;</td>
+        <td>[optional]</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodrun"></a>
+	<h3>method run <span class="smalllinenumber">[line 517]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>bool run(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Execute phase method<br /><br /><p>フェイズを順次開始する  完走した場合 true 、完走出来なかった場合、 false を返す。</p><p>Usage  <ol><li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase1</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase1:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase2</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase2:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">function&nbsp;</span><span class="src-id">phase3</span><span class="src-sym">(</span><span class="src-sym">)&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-str">&quot;phase3:&quot;</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><span class="src-id"><a href="../csr/CSR_PhaseObject.html">CSR_PhaseObject</a></span><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase1'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_2'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase2'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodpush">push</a><span class="src-sym">(</span><span class="src-str">'sample_phase_3'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'phase3'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$phase</span><span class="src-sym">-&gt;</span><a href="../csr/CSR_PhaseObject.html#methodrun">run</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-comm">//&nbsp;phase1:phase2:phase3</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>phase done status</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Fri, 24 Oct 2008 02:21:36 +0900 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
